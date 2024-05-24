@@ -6,6 +6,7 @@
     <title>Бодрый День</title>
     <link href="/dist/normalize.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
+    <script defer src="index.js"></script>
   </head>
   <body class="bg-white text-gray-900">
     <!-- <div class="background-circle"></div>
@@ -96,24 +97,55 @@
           </div>
 
           <div class="arrow-wrap">
+            <button class="arrow-left" onclick="scrollLeftFunc()">
             <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.0374 6.07804H3.28493L7.98251 1.57886C8.35793 1.2193 8.35793 0.629241 7.98251 0.269675C7.60709 -0.0898905 7.00064 -0.0898905 6.62522 0.269675L0.281567 6.34541C-0.0938549 6.70498 -0.0938549 7.28582 0.281567 7.64538L6.61559 13.7303C6.79544 13.903 7.03961 14 7.29424 14C7.54887 14 7.79304 13.903 7.97289 13.7303C8.34831 13.3708 8.34831 12.7899 7.97289 12.4304L3.28493 7.92197H14.0374C14.5668 7.92197 15 7.50709 15 7.00001C15 6.49293 14.5668 6.07804 14.0374 6.07804Z" fill="#2C2B2A" fill-opacity="0.87" />
             </svg>
+          </button>
+          <button class="arrow-right" onclick="scrollRightFunc()">
             <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.962618 6.07804H11.7151L7.01749 1.57886C6.64207 1.2193 6.64207 0.629241 7.01749 0.269675C7.39291 -0.0898905 7.99936 -0.0898905 8.37478 0.269675L14.7184 6.34541C15.0939 6.70498 15.0939 7.28582 14.7184 7.64538L8.38441 13.7303C8.20456 13.903 7.96039 14 7.70576 14C7.45113 14 7.20696 13.903 7.02711 13.7303C6.65169 13.3708 6.65169 12.7899 7.02711 12.4304L11.7151 7.92197H0.962618C0.433178 7.92197 0 7.50709 0 7.00001C0 6.49293 0.433178 6.07804 0.962618 6.07804Z" fill="#2C2B2A" fill-opacity="0.87" />
             </svg>
+          </button>
           </div>
         </div>
 
         <div class="card-wrap">
-          <ul class="card-list">
+          <ul class="card-list"  id="cardList">
+            <li class="card-item">
+              <div class="card-text-wrap">
+              <h3 class="card-title">1Шоколадный айс-латте с сырной пенкой</h3>
+              <p class="card-text">ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02</p>
+            </div>
+              <button class="card-btn">состав</button>
+            </li>
+            <li class="card-item">
+              <div class="card-text-wrap">
+                <h3 class="card-title">1Латте</h3>
+              <p class="card-text">ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02</p>
+            </div>
+              <button class="card-btn">состав</button>
+            </li>
+            <li class="card-item">
+              <div class="card-text-wrap">
+                <h3 class="card-title">1Шоколадный айс-латте с сырной пенкой</h3>
+              <p class="card-text">ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02</p>
+            </div>
+              <button class="card-btn">состав</button>
+            </li>
+            <li class="card-item">
+              <div class="card-text-wrap">
+                <h3 class="card-title">1Латте</h3>
+              <p class="card-text">ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02</p>
+            </div>
+              <button class="card-btn">состав</button>
+            </li>
             <li class="card-item">
               <div class="card-text-wrap">
               <h3 class="card-title">Шоколадный айс-латте с сырной пенкой</h3>
               <p class="card-text">ккал: 150.99, белки: 7.43, жиры: 8.18, углеводы: 12.02</p>
             </div>
               <button class="card-btn">состав</button>
-              
             </li>
             <li class="card-item">
               <div class="card-text-wrap">
@@ -272,7 +304,7 @@
                 <div class="blog-card-wrap">
                   <img src="/public/blog.png" alt="">
                   <div class="blog-card-text-wrap">
-                    <p class="blog-desq">Встречайте новую бодрую кофейню в Москве!Это новая точка с двумя этажами и освежающим и стильным интерьером. В меню — вечная бодрящая классика, крутые весенние спешелы и очень вкусные десерты. Приходите в гости на Новоданиловскую набережную 10А и попробуйте сами</p>
+                    <p class="blog-desq">Встречайте новую бодрую кофейню в Москве!Это новая точка с двумя этажами и освежающим и стильным интерьером. В меню — вечная бодрящая классика, крутые весенние спешелы и очень вкусные десерты. Приходите в гости на Новоданиловскую набережную 10А и попробуйте сами</p>
                     <a href="" >показать полностью</a>
                   </div>
                 </div>
@@ -281,7 +313,7 @@
                 <div class="blog-card-wrap">
                   <img src="/public/blog.png" alt="">
                   <div class="blog-card-text-wrap">
-                    <p class="blog-desq">Встречайте новую бодрую кофейню в Москве!Это новая точка с двумя этажами и освежающим и стильным интерьером. В меню — вечная бодрящая классика, крутые весенние спешелы и очень вкусные десерты. Приходите в гости на Новоданиловскую набережную 10А и попробуйте сами</p>
+                    <p class="blog-desq">Встречайте новую бодрую кофейню в Москве!Это новая точка с двумя этажами и освежающим и стильным интерьером. В меню — вечная бодрящая классика, крутые весенние спешелы и очень вкусные десерты. Приходите в гости на Новоданиловскую набережную 10А и попробуйте сами</p>
                     <a href="">показать полностью</a>
                   </div>
                 </div>
@@ -294,9 +326,9 @@
         <div class="partners-container container">
           <div class="partners-wrap">
             <h2 class="partners-title">в поисках новых партнёров</h2>
-            <p class="partners-text">Входим в топ-3 кофеен по количеству кофеен в России по версии журнала Foodservice</p>
-            <p class="partners-text">Одна из самых прибыльных франшиз по мнению Forbes</p>
-            <p class="partners-text partners-text-last">Каждую неделю открываем 1 новую кофейню вместе с партнёрами</p>
+            <p class="partners-text">Входим в топ-3 кофеен по количеству кофеен в России по версии журнала Foodservice</p>
+            <p class="partners-text">Одна из самых прибыльных франшиз по мнению Forbes</p>
+            <p class="partners-text partners-text-last">Каждую неделю открываем 1 новую кофейню вместе с партнёрами</p>
             <button class="partners-btn">открыть кофейню <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.40656 6.75003H9.78406L6.12405 10.41C5.83156 10.7025 5.83156 11.1825 6.12405 11.475C6.41655 11.7675 6.88906 11.7675 7.18155 11.475L12.1241 6.53253C12.4166 6.24003 12.4166 5.76753 12.1241 5.47503L7.18906 0.525028C7.04893 0.384589 6.85869 0.305664 6.66031 0.305664C6.46192 0.305664 6.27168 0.384589 6.13156 0.525028C5.83906 0.817528 5.83906 1.29003 6.13156 1.58253L9.78406 5.25003H1.40656C0.994055 5.25003 0.656555 5.58753 0.656555 6.00003C0.656555 6.41253 0.994055 6.75003 1.40656 6.75003Z" fill="#2C2B2A" />
             </svg></button>
@@ -309,8 +341,8 @@
           <div class="work-wrap">
             <img src="/public/work.png" alt="" class="work-img">
             <div class="work-wrapper">
-              <h2 class="work-title">Работай у нас</h2>
-              <p class="work-text">вакансии в кофейне и офисе</p>
+              <h2 class="work-title">Работай у нас</h2>
+              <p class="work-text">вакансии в кофейне и офисе</p>
               <form class="work-form" action="#">
                 <input class="work-inp" type="text" placeholder="город">
                 <select class="work-inp" name="select" id="">
@@ -335,8 +367,8 @@
           <div class="footer-wrap">
             <div class="footer-up">
               <div class="footer-up-left">
-            <h2 class="footer-title">Остались вопросы или хотите открыть кофейню по франшизе?</h2>
-            <p class="footer-text">Оставьте свой номер и мы с вами свяжемся</p>
+            <h2 class="footer-title">Остались вопросы или хотите открыть кофейню по франшизе?</h2>
+            <p class="footer-text">Оставьте свой номер и мы с вами свяжемся</p>
           </div>
           <div class="footer-up-right">
             <input type="text" placeholder="Ваше имя" class="footer-inp">
@@ -397,7 +429,7 @@
                   <span>630049, г. Новосибирск,</span> 
                   <span>Красный проспект 200, 12 этаж</span> </address></div>
           </div>
-          <span class="footer-day">© 2024 Бодрый день</span>
+          <span class="footer-day">© 2024 Бодрый день</span>
           </div>
         </div>
       </footer>

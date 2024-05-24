@@ -243,6 +243,26 @@ background-color:rgba(115, 255, 74, 0.38);
   gap: 10px;
 }
 
+/* код для слайдера 1  */
+.card-list {
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  flex-wrap: nowrap;
+
+}
+
+.card-item {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+}
+.card-list::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+/* code  */
+
 
 /* секция cafe  */
 
@@ -674,6 +694,8 @@ background: #01ff0b;
 font-size: 16px;
 color: #000;
 }
+
+
 
 
 
