@@ -209,7 +209,7 @@ color: #000;
   justify-content: space-between;
   border-radius: 23px;
 padding: 20px;
-min-width: 240px;
+min-width: 238px;
 height: 150px;
 box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.08);
 background: white;
@@ -245,22 +245,29 @@ background-color:rgba(115, 255, 74, 0.38);
 
 /* код для слайдера 1  */
 .card-list {
-  overflow-x: auto;
+  overflow-x: hidden;
   padding-bottom: 20px;
-  scroll-snap-type: x mandatory;
+
   display: flex;
   flex-wrap: nowrap;
+  /* scroll-behavior: smooth;
+  animation: scroll-animation 5s infinite alternate; */
 
 }
 
-.card-item {
-  flex: 0 0 240px;
-  scroll-snap-align: start;
-}
 .card-list::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
+
+/* @keyframes scroll-animation {
+  0% {
+    scroll-left: 0;
+  }
+  100% {
+    scroll-left: calc(100% - 240px * 4); /* ширина 4 карточек */
+  /* } */
+/* } */
 /* code  */
 
 

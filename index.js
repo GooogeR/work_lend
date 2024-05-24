@@ -12,7 +12,7 @@ window.scrollRightFunc = () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   const cardList = document.getElementById('cardList');
-  const cardWidth = 180; // ширина одной карточки
+  const cardWidth = 0; 
   const numberOfCardsToShow = 4;
   const scrollLeft = cardWidth * numberOfCardsToShow;
 
