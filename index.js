@@ -21,3 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
     behavior: 'auto'
   });
 });
+
+const cafeList = document.querySelector('.cafe-list');
+const arrowRight = document.querySelector('.arrow-right-img');
+const arrowLeft = document.querySelector('.arrow-left-img');
+let currentCard = 0;
+const cardWidth = 290;
+const maxShift = 3;
+const totalCards = cafeList.children.length;
+
+arrowLeft.addEventListener('click', () => {
+  currentCard = Math.min(currentCard + 1, totalCards - maxShift);
+  cafeList.style.transform = `translateX(-${currentCard * cardWidth}px)`;
+});
+
+arrowRight.addEventListener('click', () => {
+  currentCard = Math.max(currentCard - 1, 0);
+  cafeList.style.transform = `translateX(-${currentCard * cardWidth}px)`;
+});

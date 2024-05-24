@@ -194,6 +194,13 @@ color: #000;
   align-items: center;
 }
 
+.arrow-left,
+.arrow-right {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 
 /* card  */
 
@@ -209,7 +216,7 @@ color: #000;
   justify-content: space-between;
   border-radius: 23px;
 padding: 20px;
-min-width: 238px;
+min-width: 232px;
 height: 150px;
 box-shadow: 0 0 19px 0 rgba(0, 0, 0, 0.08);
 background: white;
@@ -247,7 +254,7 @@ background-color:rgba(115, 255, 74, 0.38);
 .card-list {
   overflow-x: hidden;
   padding-bottom: 20px;
-
+  padding: 0 10px;
   display: flex;
   flex-wrap: nowrap;
   /* scroll-behavior: smooth;
@@ -259,6 +266,7 @@ background-color:rgba(115, 255, 74, 0.38);
   width: 0px;
   height: 0px;
 }
+
 
 /* @keyframes scroll-animation {
   0% {
@@ -301,21 +309,45 @@ width: 233px;
 height: 44px;
   background-color: rgba(115, 255, 74, 0.38);
 }
+.cafe-slider {
+  overflow: hidden;
+  width: 1200px; /* ширина слайдера равна ширине 4 карточек */
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 1200px; /* ширина слайдера */
+}
 
 .cafe-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  gap: 30px;
+  transition: transform 0.5s ease-in-out;
 }
 
 .cafe-item {
+  flex: 0 0 300px; /* ширина одной карточки */
+  margin: 10px;
+}
+
+.cafe-img {
   border-radius: 23px;
   width: 312px;
   height: 312px;
 }
 
-.cafe-img {
-  border-radius: 23px;
+.arrow-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
+.arrow-wrap span {
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
 }
 
 
