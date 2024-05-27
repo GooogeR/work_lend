@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бодрый День</title>
+    <link href="/dist/normalize.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <script defer src="addresses.js"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+    <header>
+      <div class="header-container flex container">
+        <img
+          src="public/logo.png"
+          alt="Логотип Бодрый День"
+          class="logo-image"
+        />
+        <button id="burger-menu" class="burger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav id="navbar" class="navbar">
+          <ul class="nav-list flex">
+            <li><a href="index.html" class="nav-link">меню</a></li>
+            <li><a href="index.html" class="nav-link">адреса кофеен</a></li>
+            <li><a href="index.html" class="nav-link">маркеты</a></li>
+            <li><a href="index.html" class="nav-link">франшиза</a></li>
+            <li><a href="index.html" class="nav-link">вакансии</a></li>
+            <li><a href="index.html" class="nav-link">контакты</a></li>
+          </ul>
+          <div id="icons" class="social-icons-container">
+            <a
+              href="https://t.me/YOUR_TELEGRAM_USERNAME"
+              target="_blank"
+              class="header-link"
+            >
+              <svg
+                width="28"
+                height="24"
+                viewBox="0 0 28 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.92485 10.3319C9.44103 6.94501 14.453 4.71214 16.9607 3.63333C24.1209 0.553096 25.6087 0.018028 26.5784 0.00017129C26.7917 -0.00352627 27.2686 0.0511434 27.5775 0.310393C27.8383 0.529298 27.9101 0.825008 27.9444 1.03255C27.9788 1.2401 28.0215 1.7129 27.9876 2.08232C27.5995 6.29892 25.9206 16.5315 25.0665 21.2542C24.7051 23.2525 23.9934 23.9225 23.3045 23.9881C21.8072 24.1306 20.6703 22.9647 19.2201 21.9815C16.9509 20.443 15.669 19.4853 13.4663 17.984C10.9207 16.2491 12.5709 15.2955 14.0216 13.7371C14.4013 13.3292 20.9982 7.12313 21.1259 6.56014C21.1419 6.48973 21.1567 6.22727 21.0059 6.08868C20.8552 5.9501 20.6327 5.99749 20.4721 6.03518C20.2445 6.08861 16.6194 8.56679 9.59681 13.4697C8.56784 14.2005 7.63583 14.5566 6.80078 14.5379C5.8802 14.5174 4.10939 13.9996 2.79297 13.557C1.17832 13.0142 -0.104962 12.7271 0.00678326 11.8052C0.0649872 11.325 0.704344 10.8339 1.92485 10.3319Z"
+                  fill="#2C2B2A"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER"
+              target="_blank"
+              class="header-link"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.8 4.025C21.175 1.4 17.675 0 14 0C6.3 0 0 6.3 0 14C0 16.45 0.700011 18.9 1.92501 21L0 28L7.35002 26.075C9.45002 27.125 11.725 27.825 14 27.825C21.7 27.825 28 21.525 28 13.825C28 10.15 26.425 6.65 23.8 4.025ZM14 25.55C11.9 25.55 9.80001 25.025 8.05001 23.975L7.69999 23.8L3.32499 25.025L4.55001 20.825L4.19999 20.3C2.97499 18.375 2.44999 16.275 2.44999 14.175C2.44999 7.875 7.7 2.625 14 2.625C17.15 2.625 19.95 3.85 22.225 5.95C24.5 8.225 25.55 11.025 25.55 14.175C25.55 20.3 20.475 25.55 14 25.55ZM20.3 16.8C19.95 16.625 18.2 15.75 17.85 15.75C17.5 15.575 17.325 15.575 17.15 15.925C16.975 16.275 16.275 16.975 16.1 17.325C15.925 17.5 15.75 17.5 15.4 17.5C15.05 17.325 14 16.975 12.6 15.75C11.55 14.875 10.85 13.65 10.675 13.3C10.5 12.95 10.675 12.775 10.85 12.6C11.025 12.425 11.2 12.25 11.375 12.075C11.55 11.9 11.55 11.725 11.725 11.55C11.9 11.375 11.725 11.2 11.725 11.025C11.725 10.85 11.025 9.1 10.675 8.4C10.5 7.875 10.15 7.875 9.97502 7.875C9.80002 7.875 9.62498 7.875 9.27498 7.875C9.09998 7.875 8.74998 7.875 8.39998 8.225C8.04998 8.575 7.17501 9.45 7.17501 11.2C7.17501 12.95 8.39999 14.525 8.57499 14.875C8.74999 15.05 11.025 18.725 14.525 20.125C17.5 21.35 18.025 21 18.725 21C19.425 21 20.825 20.125 21 19.425C21.35 18.55 21.35 17.85 21.175 17.85C21 16.975 20.65 16.975 20.3 16.8Z"
+                  fill="#2C2B2A"
+                />
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="circle circle-yellow1"><svg width="481" height="799" viewBox="0 0 481 799" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f_222_1794)">
+        <circle cx="81.5" cy="399.5" r="199.5" fill="#F1FF4A" />
+      </g>
+      <defs>
+        <filter id="filter0_f_222_1794" x="-318" y="0" width="799" height="799" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+          <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_222_1794" />
+        </filter>
+      </defs>
+    </svg></div>
+  <div class="circle circle-green2"><svg width="349" height="763" viewBox="0 0 349 763" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#filter0_f_222_1795)">
+      <circle cx="381.5" cy="381.5" r="181.5" fill="#73FF4A" />
+    </g>
+    <defs>
+      <filter id="filter0_f_222_1795" x="0" y="0" width="763" height="763" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+        <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_222_1795" />
+      </filter>
+    </defs>
+  </svg></div>
+    <main>
+      <section class="address">
+        <div class="container">
+          <a href="index.html"
+          class="address-link"
+            ><svg
+              width="12"
+              height="13"
+              viewBox="0 0 12 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.9368 5.74997H2.55927L6.21927 2.08997C6.51177 1.79747 6.51177 1.31747 6.21927 1.02497C5.92677 0.732471 5.45427 0.732471 5.16177 1.02497L0.219268 5.96747C-0.0732327 6.25997 -0.0732327 6.73247 0.219268 7.02497L5.15427 11.975C5.29439 12.1154 5.48463 12.1943 5.68302 12.1943C5.88141 12.1943 6.07164 12.1154 6.21177 11.975C6.50427 11.6825 6.50427 11.21 6.21177 10.9175L2.55927 7.24997H10.9368C11.3493 7.24997 11.6868 6.91247 11.6868 6.49997C11.6868 6.08747 11.3493 5.74997 10.9368 5.74997Z"
+                fill="#828282"
+              />
+            </svg>
+            назад</a
+          >
+
+          <h1 class="address-title">Адреса кофеен</h1>
+
+          <div class="city-selector" data-state="inactive">
+            <div class="city-selector-title">
+              <svg
+                class="address-svg"
+                width="13"
+                height="16"
+                viewBox="0 0 13 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.83663 0C10.2106 0 12.9457 2.73513 12.9457 6.10909C12.9457 6.52092 12.905 6.92324 12.8273 7.31223C12.2881 11.3755 6.86873 16 6.86873 16C6.86873 16 2.25682 12.0645 1.11868 8.26462C0.865868 7.59431 0.727539 6.86786 0.727539 6.10909C0.727539 2.73513 3.46267 0 6.83663 0Z"
+                  fill="#52AE32"
+                />
+                <path
+                  d="M9.16407 6.10926C9.16407 4.82394 8.12211 3.78198 6.83679 3.78198C5.55148 3.78198 4.50952 4.82394 4.50952 6.10926C4.50952 7.39457 5.55148 8.43653 6.83679 8.43653C8.12211 8.43653 9.16407 7.39457 9.16407 6.10926Z"
+                  fill="white"
+                />
+              </svg>
+              <span class="city-selector-selected">Москва</span>
+            </div>
+            <div class="city-selector-content">
+              <input
+                id="citySelect0"
+                class="city-selector-input"
+                type="radio"
+                name="city"
+                value="москва"
+                checked
+              />
+              <label for="citySelect0" class="city-selector-label"
+                >Москва</label
+              >
+              <input
+                id="citySelect1"
+                class="city-selector-input"
+                type="radio"
+                name="city"
+                value="санкт-петербург"
+              />
+              <label for="citySelect1" class="city-selector-label"
+                >Санкт-Петербург</label
+              >
+              <input
+                id="citySelect2"
+                class="city-selector-input"
+                type="radio"
+                name="city"
+                value="новый-уренгой"
+              />
+              <label for="citySelect2" class="city-selector-label"
+                >Новый Уренгой</label
+              >
+              <input
+                id="citySelect3"
+                class="city-selector-input"
+                type="radio"
+                name="city"
+                value="екатеринбург"
+              />
+              <label for="citySelect3" class="city-selector-label"
+                >Екатеринбург</label
+              >
+            </div>
+          </div>
+          <div class="table">
+            <div>
+              <p>ул. Таймырская, 6</p>
+              <p>ул Сосенский Стан, 8</p>
+              <p>ул. Велозаводская 1/1 стр 15</p>
+              <p>ул. Арбат, 1</p>
+              <p>1. Бумажный проезд,14 с2</p>
+              <p>ул. Бутлерова 17, БЦ Нео Гео</p>
+              <p>ул. Арбат, 1</p>
+              <p>ул. Спартаковская площадь 14</p>
+              <p>ул. Арбат 54/2 стр 1 метро Смоленская</p>
+              <p>ул. ​Ямского Поля 3-я, 2 к13</p>
+            </div>
+            <div>
+              <p>ул. Таймырская, 6</p>
+              <p>ул Сосенский Стан, 8</p>
+              <p>ул. Велозаводская 1/1 стр 15</p>
+              <p>ул. Арбат, 1</p>
+              <p>1. Бумажный проезд,14 с2</p>
+              <p>ул. Бутлерова 17, БЦ Нео Гео</p>
+              <p>ул. Арбат, 1</p>
+              <p>ул. Спартаковская площадь 14</p>
+              <p>ул. Арбат 54/2 стр 1 метро Смоленская</p>
+              <p>ул. ​Ямского Поля 3-я, 2 к13</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="footer-wrap">
+          <div class="footer-up">
+            <div class="footer-up-left">
+              <h2 class="footer-title">
+                Остались вопросы или хотите открыть кофейню по франшизе?
+              </h2>
+              <p class="footer-text">
+                Оставьте свой номер и мы с вами свяжемся
+              </p>
+            </div>
+            <div class="footer-up-right">
+              <input type="text" placeholder="Ваше имя" class="footer-inp" />
+              <input
+                type="text"
+                placeholder="+7 999 999-99-99"
+                class="footer-inp"
+              />
+            </div>
+          </div>
+          <div class="footer-down">
+            <div class="footer-down-menu">
+              <div class="footer-down-menu-left">
+                <img src="public/footer-logo.svg" alt="" class="footer-img" />
+              </div>
+              <ul class="footer-list">
+                <li class="footer-item"><a href="">Меню + кбжу</a></li>
+                <li class="footer-item"><a href="">адреса кофеен</a></li>
+                <li class="footer-item"><a href="">маркеты</a></li>
+                <li class="footer-item"><a href="">франшиза</a></li>
+                <li class="footer-item"><a href="">вакансии</a></li>
+                <li class="footer-item"><a href="">контакты</a></li>
+              </ul>
+              <a href="" class="footer-btn"
+                >франшиза
+                <svg
+                  width="13"
+                  height="12"
+                  viewBox="0 0 13 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.40656 6.75003H9.78406L6.12405 10.41C5.83156 10.7025 5.83156 11.1825 6.12405 11.475C6.41655 11.7675 6.88906 11.7675 7.18155 11.475L12.1241 6.53253C12.4166 6.24003 12.4166 5.76753 12.1241 5.47503L7.18906 0.525028C7.04893 0.384589 6.85869 0.305664 6.66031 0.305664C6.46192 0.305664 6.27168 0.384589 6.13156 0.525028C5.83906 0.817528 5.83906 1.29003 6.13156 1.58253L9.78406 5.25003H1.40656C0.994055 5.25003 0.656555 5.58753 0.656555 6.00003C0.656555 6.41253 0.994055 6.75003 1.40656 6.75003Z"
+                    fill="#2C2B2A"
+                  /></svg
+              ></a>
+            </div>
+            <div class="footer-down-contacts">
+              <h3 class="footer-down-title">Контакты</h3>
+              <div class="footer-miidle">
+                <div class="footer-cont">
+                  <div class="footer-cont-cont">
+                    <span class="footer-name">Поставщикам</span>
+                    <a
+                      class="footer-name footer-name-link"
+                      href="mailto:sales@bodryi-den.ru"
+                      >sales@bodryi-den.ru</a
+                    >
+                  </div>
+                  <div class="footer-cont-cont">
+                    <span class="footer-name">Вакансии</span>
+                    <a
+                      class="footer-name footer-name-link"
+                      href="mailto:hr@bodryi-den.ru"
+                      >hr@bodryi-den.ru</a
+                    >
+                    <div class="footer-cont-cont">
+                      <span class="footer-name">Предложить локацию</span>
+                      <a
+                        class="footer-name footer-name-link"
+                        href="mailto:info@bodryi-den.ru"
+                        >info@bodryi-den.ru</a
+                      >
+                    </div>
+                  </div>
+                  <div class="footer-cont">
+                    <div class="footer-cont-cont">
+                      <span class="footer-name">Поддержка партнёров</span>
+                      <a
+                        class="footer-name footer-name-link"
+                        href="mailto:support@bodryi-den.ru"
+                        >support@bodryi-den.ru</a
+                      >
+                    </div>
+                    <div class="footer-cont-cont">
+                      <span class="footer-name">Офис</span>
+                      <a
+                        class="footer-name footer-name-link"
+                        href="tel:+73833750024"
+                        >+7 383 375-00-24</a
+                      >
+                    </div>
+                    <a
+                      class="footer-name footer-name-link"
+                      href="mailto:info@bodryi-den.ru"
+                      >info@bodryi-den.ru</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-down-addres">
+              <div class="footer-soc">
+                <svg
+                  class="footer-soc-link"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="40" height="40" rx="20" fill="white" />
+                  <path
+                    d="M12.2374 19.027C17.0692 17.0513 20.2912 15.7487 21.9033 15.1194C26.5063 13.3226 27.4627 13.0105 28.0861 13.0001C28.2232 12.9979 28.5298 13.0298 28.7284 13.1811C28.8961 13.3088 28.9422 13.4813 28.9643 13.6023C28.9864 13.7234 29.0139 13.9992 28.992 14.2147C28.7426 16.6744 27.6633 22.6434 27.1142 25.3983C26.8818 26.564 26.4244 26.9548 25.9815 26.9931C25.0189 27.0762 24.288 26.3961 23.3558 25.8226C21.897 24.9251 21.0729 24.3664 19.6569 23.4907C18.0205 22.4786 19.0813 21.9224 20.0139 21.0133C20.258 20.7754 24.4988 17.1552 24.5809 16.8268C24.5912 16.7857 24.6007 16.6326 24.5038 16.5517C24.4069 16.4709 24.2639 16.4985 24.1606 16.5205C24.0143 16.5517 21.6839 17.9973 17.1694 20.8573C16.5079 21.2836 15.9087 21.4913 15.3719 21.4805C14.7801 21.4685 13.6417 21.1664 12.7955 20.9083C11.7575 20.5916 10.9325 20.4242 11.0044 19.8864C11.0418 19.6063 11.4528 19.3198 12.2374 19.027Z"
+                    fill="#2C2B2A"
+                  />
+                </svg>
+                <svg
+                  class="footer-soc-link"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="40" height="40" rx="20" fill="white" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.6 14.3C24.1 12.8 22.1 12 20 12C15.6 12 12 15.6 12 20C12 21.4 12.4 22.8 13.1 24L12 28L16.2 26.9C17.4 27.5 18.7 27.9 20 27.9C24.4 27.9 28 24.3 28 19.9C28 17.8 27.1 15.8 25.6 14.3ZM20 26.6C18.8 26.6 17.6 26.3 16.6 25.7L16.4 25.6L13.9 26.3L14.6 23.9L14.4 23.6C13.7 22.5 13.4 21.3 13.4 20.1C13.4 16.5 16.4 13.5 20 13.5C21.8 13.5 23.4 14.2 24.7 15.4C26 16.7 26.6 18.3 26.6 20.1C26.6 23.6 23.7 26.6 20 26.6ZM23.6 21.6C23.4 21.5 22.4 21 22.2 21C22 20.9 21.9 20.9 21.8 21.1C21.7 21.3 21.3 21.7 21.2 21.9C21.1 22 21 22 20.8 22C20.6 21.9 20 21.7 19.2 21C18.6 20.5 18.2 19.8 18.1 19.6C18 19.4 18.1 19.3 18.2 19.2C18.3 19.1 18.4 19 18.5 18.9C18.6 18.8 18.6 18.7 18.7 18.6C18.8 18.5 18.7 18.4 18.7 18.3C18.7 18.2 18.3 17.2 18.1 16.8C18 16.5 17.8 16.5 17.7 16.5C17.6 16.5 17.5 16.5 17.3 16.5C17.2 16.5 17 16.5 16.8 16.7C16.6 16.9 16.1 17.4 16.1 18.4C16.1 19.4 16.8 20.3 16.9 20.5C17 20.6 18.3 22.7 20.3 23.5C22 24.2 22.3 24 22.7 24C23.1 24 23.9 23.5 24 23.1C24.2 22.6 24.2 22.2 24.1 22.2C24 21.7 23.8 21.7 23.6 21.6Z"
+                    fill="#2C2B2A"
+                  />
+                </svg>
+              </div>
+              <address class="footer-addres">
+                <span>Адрес</span>
+                <span>630049, г. Новосибирск,</span>
+                <span>Красный проспект 200, 12 этаж</span>
+              </address>
+            </div>
+          </div>
+          <span class="footer-day">© 2024 Бодрый день</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
